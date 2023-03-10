@@ -1,0 +1,96 @@
+.sabias {
+  width: 100%;
+}
+.sabias h2 {
+  color: #29abe2;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: center;
+}
+.sabias h6 {
+  color: #29abe2;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: center;
+}
+.container-sabias {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin: 25px auto 30px auto;
+  gap: 1em;
+}
+.item-sabias {
+  background-color: #1c2740;
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
+  padding: 30px;
+  gap: 1em;
+  transition: 0.5s;
+  border-radius: 7px 30px;
+  transition: all 0.7s;
+}
+.item-sabias:hover {
+  transition: all 0.7s;
+  transform: scale(0.9);
+}
+.numero {
+  color: #ffc600;
+  font-size: 4em;
+  font-family: "Righteous", cursive;
+}
+.texto-numero {
+  color: #fff;
+  font-size: 0.9em;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .sabias {
+    width: 100%;
+  }
+  .sabias h2 {
+    color: #29abe2;
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+  }
+  .sabias h6 {
+    color: #29abe2;
+    font-size: 1.9em;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+  }
+  .container-sabias {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 25px auto 30px auto;
+    gap: 1em;
+  }
+  .item-sabias {
+    background-color: #1c2740;
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 1em;
+    transition: 0.5s;
+    border-radius: 7px 30px;
+  }
+  .numero {
+    color: #ffc600;
+    font-size: 5em;
+    font-family: "Righteous", cursive;
+  }
+  .texto-numero {
+    color: #fff;
+    font-size: 1em;
+    text-align: left;
+  }
+}

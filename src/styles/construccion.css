@@ -1,0 +1,29 @@
+.promo {
+  width: 100%;
+  margin: auto;
+  overflow-x: hidden;
+  position: relative;
+}
+.promo img {
+  max-width: 100%;
+}
+.promo p {
+  position: absolute;
+  width: 800px;
+  left: 35%;
+  top: 30%;
+  color: #fff;
+  font-size: 55px;
+  font-weight: 900;
+}
+@media (max-width: 500px) {
+  .promo p {
+    position: absolute;
+    width: 800px;
+    left: 17%;
+    top: 35%;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 900;
+  }
+}

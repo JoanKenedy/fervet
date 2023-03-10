@@ -1,0 +1,89 @@
+.container-hero-servicios {
+  width: 100%;
+  overflow-x: hidden;
+  background-image: url(../img/fondo-servicios.png);
+  background-size: cover;
+  background-position: top center;
+  min-height: 900px;
+  position: relative;
+}
+.text-hero-servicios {
+  position: absolute;
+  width: 50%;
+  left: 20%;
+  top: 30%;
+}
+.text-hero-servicios p {
+  color: #003366;
+  font-size: 2.7em;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: "Catamaran", sans-serif;
+}
+.forma-servicios {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+.contact-hero-servicios {
+  display: block;
+  background-color: #29abe2;
+  color: #fff !important;
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+  padding: 7px 10px;
+  border-radius: 7px;
+  position: relative;
+  text-align: center;
+  width: 170px;
+  transition: 0.4s;
+  text-decoration: none;
+}
+.contact-hero:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+
+@media (max-width: 767px) {
+  .container-hero-servicios {
+    width: 100%;
+    overflow-x: hidden;
+    background-image: url(../img/fondo-servicio-cel.png);
+    background-size: cover;
+    background-position: none;
+    min-height: 500px;
+    position: relative;
+  }
+  .text-hero-servicios {
+    position: absolute;
+    width: 90%;
+    left: 8%;
+    top: 20%;
+  }
+
+  .contact-hero-servicios {
+    display: block;
+    background-color: #29abe2;
+    color: #fff !important;
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+    padding: 7px 10px;
+    border-radius: 7px;
+    position: relative;
+    text-align: center;
+    width: 170px;
+    transition: 0.4s;
+    text-decoration: none;
+  }
+  .contact-hero-servivios:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+  }
+  .text-hero-servicios p {
+    font-size: 1.7em;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: "Catamaran", sans-serif;
+  }
+}

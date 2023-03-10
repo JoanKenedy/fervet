@@ -1,0 +1,35 @@
+.promociones {
+  width: 100%;
+  margin: 10px auto 10px auto;
+}
+.container-promociones {
+  width: 92%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding: 0px 10px;
+  margin: auto;
+}
+.item-promociones img {
+  max-width: 100%;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
+  transition: 0.5s;
+}
+.item-promociones img:hover {
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+@media (max-width: 767px) {
+  .promociones {
+    width: 100%;
+    margin: 10px auto 10px auto;
+  }
+  .container-promociones {
+    width: 92%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 0px 10px;
+    margin: auto;
+  }
+}

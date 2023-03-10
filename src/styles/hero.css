@@ -1,0 +1,172 @@
+.container_hero {
+  width: 100%;
+  position: relative;
+}
+.container_slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.right_button,
+.left_button {
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: none;
+  width: 40px;
+  height: 40px;
+}
+.right_button i:hover,
+.left_button i:hover {
+  color: #2155cd;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.right_button i,
+.left_button i {
+  transition: 0.3s;
+}
+.left_button {
+  transition: 0.3s;
+  position: absolute;
+  top: 50%;
+  left: 4%;
+}
+.right_button {
+  transition: 0.3s;
+  position: absolute;
+  top: 50%;
+  right: 4%;
+}
+.img_slider {
+  max-width: 100%;
+}
+.citas {
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  top: 70%;
+}
+.container_cita {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  margin: auto;
+}
+.item_cita:nth-child(1) {
+  background-color: #3ab0ff;
+  padding: 40px 20px;
+  text-align: left;
+  line-height: 70px;
+}
+.item_cita:nth-child(1) a {
+  padding: 15px 40px;
+  background-color: #eb1d36;
+  width: 150px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+.item_cita:nth-child(1) a i {
+  margin-right: 7px;
+}
+.item_cita:nth-child(2) {
+  background-color: #2155cd;
+  padding: 40px 20px;
+  display: grid;
+}
+.container_horarios {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.item_cita h6 {
+  font-size: 25px;
+  color: #fff;
+}
+.item_cita p {
+  color: #fff;
+  font-size: 20px;
+}
+.item_horarios:nth-child(1),
+.item_horarios:nth-child(3),
+.item_horarios:nth-child(5) {
+  text-align: left;
+  padding: 2px 7px;
+}
+.item_horarios:nth-child(2),
+.item_horarios:nth-child(4),
+.item_horarios:nth-child(6) {
+  text-align: right;
+  padding: 2px 7px;
+}
+
+@media (max-width: 767px) {
+  .right_button,
+  .left_button {
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: none;
+    width: 25px;
+    height: 25px;
+  }
+  .left_button {
+    transition: 0.3s;
+    position: absolute;
+    top: 55%;
+    left: 4%;
+  }
+  .right_button {
+    transition: 0.3s;
+    position: absolute;
+    top: 55%;
+    right: 4%;
+  }
+
+  .citas {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 74%;
+  }
+  .container_cita {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    margin: auto;
+  }
+  .item_cita:nth-child(2) {
+    display: none;
+  }
+  .item_cita:nth-child(1) {
+    background-color: #3ab0ff;
+    padding: 40px 10px;
+    text-align: center;
+    line-height: 50px;
+  }
+  .item_cita:nth-child(1) a {
+    padding: 15px 40px;
+    background-color: #eb1d36;
+    width: 150px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  .item_cita h6 {
+    font-size: 25px;
+    color: #fff;
+  }
+  .item_cita p {
+    color: #fff;
+    font-size: 17px;
+  }
+}

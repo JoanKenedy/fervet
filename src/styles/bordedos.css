@@ -1,0 +1,45 @@
+.borde-dos {
+  width: 100%;
+  padding: 0px;
+  background-color: #29abe2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.borde-dos img {
+  max-width: 7%;
+}
+.borde-dos h2 {
+  color: #003366;
+  font-size: 2.2em;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  margin-left: 25px;
+}
+@media (max-width: 768px) {
+  .borde-dos h2 {
+    color: #003366;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 25px;
+  }
+  .borde-dos img {
+    max-width: 9%;
+  }
+}
+@media (max-width: 380px) {
+  .borde-dos h2 {
+    color: #003366;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 25px;
+  }
+  .borde-dos img {
+    max-width: 12%;
+  }
+}

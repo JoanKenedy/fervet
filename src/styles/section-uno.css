@@ -1,0 +1,112 @@
+.container-vacunacion {
+  width: 100%;
+}
+.section-uno {
+  width: 90%;
+  margin: 40px auto 10px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 15px auto;
+}
+.item-section-uno {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.top-one {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.top-one h2 {
+  color: #29abe2;
+  font-size: 3em;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.top-two p {
+  text-align: justify;
+  font-size: 1.3em;
+  margin-top: 10px;
+  color: #000;
+}
+.pie-mascota {
+  max-width: 20%;
+}
+.item-section-uno a {
+  display: block;
+  margin: 15px auto;
+  background-color: #003366;
+  padding: 5px;
+  color: #fff;
+  font-size: 1.7em;
+  text-transform: uppercase;
+  width: 220px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: 0.7s;
+}
+.item-section-uno a:hover {
+  background-color: #29abe2;
+  transition: 0.7s;
+  transform: scale(0.9);
+}
+.top-two h2 {
+  color: #003366;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.mascota {
+  max-width: 60%;
+}
+@media (max-width: 768px) {
+  .section-uno {
+    width: 90%;
+    margin: 40px auto 10px auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 15px auto;
+    gap: 1em;
+  }
+  .top-one h2 {
+    color: #29abe2;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  .top-two h2 {
+    color: #003366;
+    font-weight: 700;
+    font-size: 1.2em;
+  }
+  .top-two p {
+    text-align: justify;
+    font-size: 1em;
+    margin-top: 10px;
+    color: #000;
+  }
+  .item-section-uno a {
+    display: block;
+    margin: 15px auto;
+    background-color: #003366;
+    padding: 10px;
+    color: #fff;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.7s;
+  }
+  .pie-mascota {
+    max-width: 20%;
+  }
+  .mascota {
+    max-width: 80%;
+  }
+}

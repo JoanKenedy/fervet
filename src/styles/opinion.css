@@ -1,0 +1,62 @@
+.opiniones {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+.opiniones h2 {
+  text-align: center;
+  color: #003366;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.container-opiniones {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 90%;
+  margin: 20px auto 30px auto;
+  gap: 1em;
+}
+.item-opiniones {
+  background-color: #003366;
+  padding: 20px;
+}
+.item-opiniones span i {
+  color: gold;
+  margin: 0px 10px;
+}
+.item-opiniones h6 {
+  font-size: 1.2em;
+  color: #fff;
+}
+.item-opiniones p {
+  color: #fff;
+  text-align: justify;
+  padding: 10px;
+}
+@media (max-width: 768px) {
+  .container-opiniones {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+    margin: 20px auto 30px auto;
+    gap: 1em;
+  }
+  .opiniones h2 {
+    text-align: center;
+    color: #003366;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+  .item-opiniones h6 {
+    font-size: 1em;
+    color: #fff;
+  }
+  .item-opiniones p {
+    color: #fff;
+    text-align: justify;
+    padding: 10px;
+    font-size: 0.9em;
+  }
+}
