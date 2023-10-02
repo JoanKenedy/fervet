@@ -1,26 +1,27 @@
 import React, { useState } from "react";
 import "../styles/botones.css";
-import Whatsapp from "../img/whatsapp.png";
-import Telefono from "../img/phone.png";
-import Icono from "../img/icono_fervet.png";
+import Whatsapp from "../img/whats.png";
+import Facebook from "../img/facebook.png";
+import Insta from "../img/instagram.png";
 
 const Botones = () => {
-  const [isModel, setIsModel] = useState(false);
-  const abrirBotones = () => setIsModel(!isModel);
-
   return (
     <div className="container-btns">
-      <img
-        src={Icono}
-        alt=""
-        className="icono_principal"
-        onClick={abrirBotones}
-      />
-      <div className="btn-texto">
-        <p>¡Da Click y contactanos!</p>
-      </div>
-
-      <div className={`img-iconos ${isModel && "aparecer"}`}>
+      <div className="all_redes">
+        <a
+          href="https://instagram.com/fervet.quirurgico?igshid=MzRlODBiNWFlZA=="
+          className="icono_dos"
+          target="_blank"
+        >
+          <img src={Insta} alt="" />
+        </a>
+        <a
+          href="https://www.facebook.com/profile.php?id=100083396351978&mibextid=LQQJ4d"
+          className="icono_dos"
+          target="_blank"
+        >
+          <img src={Facebook} alt="" />
+        </a>
         <a
           href="https://api.whatsapp.com/send/?phone=573228323376"
           onclick="return gtag_report_conversion('https://api.whatsapp.com/send?phone=573228323376');"
@@ -28,9 +29,6 @@ const Botones = () => {
           target="_blank"
         >
           <img src={Whatsapp} alt="" />
-        </a>
-        <a href="tel:6017156662" onclick="return gtag_report_conversion('tel:6017156662');"  className="icono_dos" target="_blank">
-          <img src={Telefono} alt="" />
         </a>
       </div>
     </div>

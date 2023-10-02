@@ -4,6 +4,9 @@ import Logo from "../img/logo-fervet.png";
 import MenuBar from "../img/menu-bar.svg";
 import Desparasitacion from "../img/promo-web.png";
 import Cerrar from "../img/cross.png";
+import Facebook from "../img/facebook.png";
+import Insta from "../img/instagram.png";
+
 import "../styles/navbar.css";
 
 const Navbar = () => {
@@ -57,11 +60,20 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="https://wa.me/573228323376"
+                  href="https://instagram.com/fervet.quirurgico?igshid=MzRlODBiNWFlZA=="
                   target="_blank"
                   className="contacto-header"
                 >
-                  Contacto
+                  <img src={Insta} className="" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100083396351978&mibextid=LQQJ4d"
+                  target="_blank"
+                  className="contacto-header"
+                >
+                  <img src={Facebook} className="" />
                 </a>
               </li>
             </ul>

@@ -1,192 +1,57 @@
-.btn-texto {
-  background-color: #05a6e1;
-  width: 350px;
-  padding: 12px 30px 12px 40px;
+.container-btns {
+  width: 100%;
+
+  position: relative;
+}
+.all_redes {
   position: fixed;
-  bottom: 8vh;
-  right: 1.3em;
-  border-radius: 21px;
-  transition: 0.7s;
-  z-index: 1;
-  text-align: left;
-  cursor: pointer;
-  animation: crecer;
-  animation-duration: 5s;
-
-  animation-iteration-count: 5;
-  transform-origin: right;
-}
-
-@keyframes crecer {
-  0% {
-    transform: scaleX(0);
-  }
-
-  100% {
-    transform: scaleX(1);
-  }
-}
-
-.btn-texto p {
-  color: #fff;
-  font-size: 20px;
-}
-.icono_principal {
-  position: fixed;
-  bottom: 5vh;
-  right: 1em;
-  z-index: 5;
-  animation: pulse 2s infinite;
-  border-radius: 50%;
-  max-width: 8%;
-}
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-
-  70% {
-    transform: scale(1.1);
-    box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.4);
-    border-radius: 50%;
-  }
-  100% {
-    transform: scale(1);
-    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.4);
-    border-radius: 50%;
-  }
-}
-.img-iconos {
-  -webkit-transform: translateY(100%);
-  -ms-transform: translateY(100%);
-  transform: translateY(100%);
-  position: fixed;
-  bottom: 24vh;
-  right: -22px;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
   flex-direction: column;
-  visibility: hidden;
-  z-index: 1;
+  width: 100%;
+  height: auto;
 }
-.img-iconos.aparecer {
-  position: fixed;
-  bottom: 24vh;
-  right: -22px;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-  z-index: 998;
-  -webkit-transform: translateY(0);
-  -ms-transform: translateY(0);
-  transform: translateY(0);
-  visibility: visible;
-  z-index: 1;
+.all_redes a img {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  margin-right: 4px;
 }
-.icono_dos img {
-  width: 60%;
+.swiper-pagination-bullet {
+  height: 14px;
+  width: 14px;
+  object-fit: cover;
 }
-@media (max-width: 768px) {
-  .btn-texto {
-    background-color: #05a6e1;
-    width: 270px;
-    padding: 12px 30px 12px 40px;
-    position: fixed;
-    bottom: 6vh;
-    right: 2.5em;
-    border-radius: 21px;
+@media (min-width: 767px) {
+  .all_redes a img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    margin-right: 5px;
+  }
+  .all_redes a:hover {
+    transform: scale(0.9);
     transition: 0.7s;
-    z-index: 1;
-    text-align: left;
-    cursor: pointer;
-    animation: crecer;
-    animation-duration: 5s;
-
-    animation-iteration-count: 5;
-    transform-origin: right;
   }
-
-  @keyframes crecer {
-    0% {
-      transform: scaleX(0);
-    }
-
-    100% {
-      transform: scaleX(1);
-    }
+  .swiper-pagination-bullet {
+    height: 12px;
+    width: 12px;
+    object-fit: cover;
   }
-
-  .btn-texto p {
-    color: #fff;
-    font-size: 1em;
-  }
-  .icono_principal {
+  .all_redes {
     position: fixed;
-    bottom: 5vh;
-    right: 1em;
-    z-index: 5;
-    animation: pulse 2s infinite;
-    border-radius: 50%;
-    max-width: 24%;
-  }
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-
-    70% {
-      transform: scale(1.1);
-      box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.4);
-      border-radius: 50%;
-    }
-    100% {
-      transform: scale(1);
-      box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.4);
-      border-radius: 50%;
-    }
-  }
-  .img-iconos {
-    -webkit-transform: translateY(100%);
-    -ms-transform: translateY(100%);
-    transform: translateY(100%);
-    position: fixed;
-    bottom: 18vh;
-    right: -57px;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
     flex-direction: column;
-    visibility: hidden;
-    z-index: 1;
-  }
-  .img-iconos.aparecer {
-    position: fixed;
-    bottom: 18vh;
-    right: -57px;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-    z-index: 998;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-    visibility: visible;
-    z-index: 1;
-  }
-  .icono_dos img {
-    width: 45%;
+    width: 100%;
+    height: auto;
   }
 }

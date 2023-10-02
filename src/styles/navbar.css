@@ -30,28 +30,12 @@ header {
   text-transform: uppercase;
   font-size: 20px;
 }
-.contacto-header {
-  background-color: #29abe2;
-  color: #fff !important;
-  font-weight: 500 !important;
-  text-transform: capitalize !important;
-  padding: 7px 30px;
-  border-radius: 7px;
-  position: relative;
+.contacto-header img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
 }
-.contacto-header::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 0px;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.2);
-  transition: all 1s ease;
-}
-.contacto-header:hover::before {
-  width: 100%;
-}
+
 .menu-bar {
   display: none;
 }
