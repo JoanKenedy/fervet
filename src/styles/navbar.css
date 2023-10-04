@@ -52,6 +52,8 @@ header {
   transform-origin: top;
   display: flex;
   justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
 }
 
 .container-modal {
@@ -78,26 +80,39 @@ header {
   display: flex;
 }
 .container-modal img {
-  width: 450px;
-  height: 450px;
+  width: 400px;
+  height: 400px;
   margin: 15px;
 }
 .container-modal a {
   display: block;
-  width: 300px;
+  width: 320px;
   background-color: #2bb741;
-  padding: 10px;
+  padding: 0px;
   text-align: center;
   color: #fff;
   text-decoration: none;
   margin: 5px auto;
   border-radius: 10px;
-  font-size: 1.3em;
+  font-size: 1.1em;
   transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+.modal-footer {
+  display: flex;
+  gap: 18px;
 }
 
 .container-modal .btn_form {
   background-color: #29abe2 !important;
+}
+.container-modal a img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
 }
 .container-modal a:hover {
   transform: scale(0.9);
@@ -170,6 +185,15 @@ header {
     border-radius: 7px;
     position: relative;
   }
+  .title-submenu {
+    background-color: #29abe2;
+    color: #fff !important;
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+    padding: 7px 30px;
+    border-radius: 7px;
+    position: relative;
+  }
   .menu li a::before {
     content: "";
     position: absolute;
@@ -197,42 +221,59 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
   }
 
   .container-modal {
     width: 95%;
 
     text-align: center;
+    padding-top: 7px;
   }
   .container-modal h2 {
     color: #fff;
-    font-size: 1.3em;
+    font-size: 1.2em;
     text-transform: uppercase;
     font-weight: 800;
-    line-height: 30px;
+    line-height: 20px;
   }
   .container-modal p {
     color: #fff;
-    font-size: 1.1em;
+    font-size: 1em;
   }
   .container-modal img {
-    width: 290px;
-    height: 290px;
+    width: 220px;
+    height: 220px;
     object-fit: cover;
     margin: 10px;
   }
+  .modal-footer {
+    gap: 5px;
+  }
   .container-modal a {
     display: block;
-    width: 220px;
+    width: 270px;
     background-color: #2bb741;
     padding: 6px;
     text-align: center;
     color: #fff;
     text-decoration: none;
-    margin: 12px auto;
+    margin: 0px auto;
     border-radius: 15px;
-    font-size: 1.1em;
+    font-size: 1em;
     transition: 0.5s;
+  }
+  .container-modal a img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+  }
+  .modal-footer {
+    flex-direction: column;
+  }
+  .modal-footer a {
+    display: flex;
+    justify-content: center;
   }
   .container-modal .btn_form {
     background-color: #29abe2 !important;
@@ -245,7 +286,7 @@ header {
   #cerrar {
     position: absolute;
     right: 5px;
-    top: 10px;
+    top: 0px;
     width: 28px;
     height: 28px;
   }

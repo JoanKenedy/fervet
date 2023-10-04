@@ -12,7 +12,7 @@ const Description = () => {
     <div className="description">
       <h2>Veterinaria Bogotá</h2>
       <div className="container-description">
-        <div className="item-description" data-aos="fade-right">
+        <div className="item-description" data-aos="fade-down">
           <p>
             Somos una entidad colombiana especializada en la salud preventiva,
             diagnóstico y tratamiento de las diferentes patologías que afectan a
@@ -26,7 +26,7 @@ const Description = () => {
             siempre la vida.
           </p>
         </div>
-        <div className="item-description" data-aos="fade-left">
+        <div className="item-description" data-aos="fade-up">
           <img src={Mascota} alt="" />
         </div>
       </div>

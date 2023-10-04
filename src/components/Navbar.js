@@ -7,7 +7,9 @@ import Desp from "../img/2x1_c.jpg";
 import Cerrar from "../img/cross.png";
 import Facebook from "../img/facebook.png";
 import Insta from "../img/instagram.png";
-import Whatsapp from "../img/whats.png";
+import Whatsapp from "../img/what.png";
+import wats from "../img/whats.png";
+import formulario from "../img/exam.png";
 
 import "../styles/navbar.css";
 
@@ -25,6 +27,27 @@ const Navbar = () => {
 
   const handleIsModal = () => {
     setIsModal(false);
+  };
+  const Links = [
+    {
+      title: "Todos los servicios",
+      url: "servicios",
+    },
+    {
+      title: "Cirugía",
+      url: "cirugia",
+    },
+    {
+      title: "Vacunas",
+      url: "vacunas",
+    },
+  ];
+  const [submenu, subMenuSelected] = useState(null);
+  const toggle = (i) => {
+    if (submenu === i) {
+      return subMenuSelected(null);
+    }
+    subMenuSelected(i);
   };
 
   return (
@@ -46,20 +69,27 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link to="servicios" onClick={handleIsOpen}>
-                  Servicios
-                </Link>
+                <div className="menu-sub">
+                  <p className="title-submenu">Servicios</p>
+                  <ul>
+                    <Link to="servicios" className="links-subemnu">
+                      Todos los servicios
+                    </Link>
+                    <Link to="cirugia" className="links-subemnu">
+                      Cirugía
+                    </Link>
+                    <Link to="vacunacion" className="links-subemnu">
+                      Vacunas
+                    </Link>
+                  </ul>
+                </div>
               </li>
               <li>
-                <Link to="vacunacion" onClick={handleIsOpen}>
-                  Vacunas
+                <Link to="formulario" onClick={handleIsOpen}>
+                  Contacto
                 </Link>
               </li>
-              <li>
-                <Link to="cirugia" onClick={handleIsOpen}>
-                  Cirugía
-                </Link>
-              </li>
+
               <li>
                 <div className="redes_header">
                   <a
@@ -115,10 +145,10 @@ const Navbar = () => {
             </div>
             <div className="modal-footer">
               <a href="https://wa.me/573228323376" target="_blank">
-                Whatsapp
+                <img src={wats} /> Whatsapp
               </a>
               <Link to="formulario" className="btn_form">
-                Llenar formulario
+                <img src={formulario} /> ¿Deseas que te contáctemos?
               </Link>
             </div>
           </div>

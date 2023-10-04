@@ -113,6 +113,52 @@
 .swiper-button-next {
   display: block !important;
 }
+.modal-hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 15px;
+}
+.modal-hero a img {
+  width: 28px;
+  height: 28px;
+  object-fit: cover;
+}
+.btn_whats {
+  background-color: #2bb741;
+  width: 320px;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: 0.8s;
+}
+.btn_formulario {
+  background-color: #29abe2;
+  width: 320px;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: 0.8s;
+}
+.btn_formulario:hover,
+.btn_whats:hover {
+  transform: scale(0.9);
+  transition: 0.8s;
+}
 
 @media (max-width: 767px) {
   .swiper-button-prev,
@@ -179,5 +225,53 @@
   .item_cita p {
     color: #fff;
     font-size: 17px;
+  }
+
+  .modal-hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin: 15px auto;
+  }
+  .modal-hero a img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+  }
+  .btn_whats {
+    background-color: #2bb741;
+    width: 270px;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: 0.8s;
+  }
+  .btn_formulario {
+    background-color: #29abe2;
+    width: 270px;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: 0.8s;
+  }
+  .btn_formulario:hover,
+  .btn_whats:hover {
+    transform: scale(0.9);
+    transition: 0.8s;
   }
 }

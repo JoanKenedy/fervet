@@ -13,10 +13,10 @@ const Promociones = () => {
   return (
     <div className="promociones">
       <div className="container-promociones">
-        <div className="item-promociones" data-aos="fade-left">
+        <div className="item-promociones" data-aos="fade-down">
           <img src={FotoDos} alt="" />
         </div>
-        <div className="item-promociones" data-aos="fade-right">
+        <div className="item-promociones" data-aos="fade-up">
           <img src={FotoUno} alt="" />
         </div>
       </div>

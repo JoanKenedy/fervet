@@ -1,57 +1,24 @@
 .container-btns {
   width: 100%;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: end;
   position: relative;
-}
-.all_redes {
+  gap: 0px;
   position: fixed;
   z-index: 10;
   bottom: 0;
   left: 0;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
 }
-.all_redes a img {
-  width: 55px;
-  height: 55px;
-  object-fit: cover;
-  margin-right: 4px;
+
+.container-btns a img {
+  height: 65px;
+  width: 65px;
 }
-.swiper-pagination-bullet {
-  height: 14px;
-  width: 14px;
-  object-fit: cover;
-}
-@media (min-width: 767px) {
-  .all_redes a img {
-    width: 65px;
-    height: 65px;
-    object-fit: cover;
-    margin-right: 5px;
-  }
-  .all_redes a:hover {
-    transform: scale(0.9);
-    transition: 0.7s;
-  }
-  .swiper-pagination-bullet {
-    height: 12px;
-    width: 12px;
-    object-fit: cover;
-  }
-  .all_redes {
-    position: fixed;
-    z-index: 10;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
+@media (max-width: 767px) {
+  .container-btns a img {
+    height: 55px;
+    width: 55px;
   }
 }

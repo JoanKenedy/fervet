@@ -10,7 +10,7 @@ const Formulario = () => {
 
     emailjs
       .sendForm(
-        "service_xgvq61c",
+        "service_h2zl3nr",
         "template_ycgu0uf",
         form.current,
         "RGS5NrstxG7vf6h22"
@@ -18,9 +18,10 @@ const Formulario = () => {
       .then(
         (result) => {
           console.log("Todo ok");
+          form.current.reset();
         },
         (error) => {
-          console.log("mal");
+          console.log("Algo salio mal");
         }
       );
   };
@@ -31,32 +32,32 @@ const Formulario = () => {
           <h2>Contacto</h2>
           <form ref={form} onSubmit={sendEmail}>
             <div className="input-container">
-              <label>Nombre:</label>
-              <input type="text" name="nombre" />
+              <label>Nombre :</label>
+              <input type="text" name="nombre" required />
             </div>
             <div className="input-container">
-              <label>Nombre de la mascota:</label>
-              <input type="text" name="mascota" />
+              <label>Nombre de la mascota :</label>
+              <input type="text" name="mascota" required />
             </div>
             <div className="input-container">
-              <label>Teléfono:</label>
-              <input type="text" name="telefono" />
+              <label>Teléfono :</label>
+              <input type="text" name="telefono" required />
             </div>
             <div className="input-container">
-              <label>Correo:</label>
-              <input type="email" name="correo" />
+              <label>Correo :</label>
+              <input type="email" name="correo" required />
             </div>
             <div className="input-container">
-              <label>Especie:</label>
-              <select name="especie">
+              <label>Especie :</label>
+              <select name="especie" required>
                 <option value="canino">Canino</option>
                 <option value="felino">Felino</option>
                 <option value="otros">Otros</option>
               </select>
             </div>
             <div className="input-container">
-              <label>Asunto:</label>
-              <select name="asunto">
+              <label>Asunto :</label>
+              <select name="asunto" required>
                 <option value="informacion">Información general </option>
                 <option value="consulta">Agendamiento de consulta </option>
                 <option value="spa">Agendamiento de spa </option>
