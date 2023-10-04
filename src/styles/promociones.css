@@ -3,11 +3,11 @@
   margin: 10px auto 10px auto;
 }
 .container-promociones {
-  width: 92%;
+  width: 75%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-  padding: 0px 10px;
+  padding: 20px 10px;
   margin: auto;
 }
 .item-promociones img {

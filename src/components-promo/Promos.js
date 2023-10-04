@@ -1,6 +1,6 @@
 import React from "react";
-import FotoOne from "../img/promo-1-enero.jpg";
-import FotoUno from "../img/promo-2-enero.jpg";
+import FotoUno from "../img/certificado_cuadrado.jpg";
+import FotoOne from "../img/2x1_c.jpg";
 
 import "../styles/promos.css";
 

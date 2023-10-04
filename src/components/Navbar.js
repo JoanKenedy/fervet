@@ -2,10 +2,12 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../img/logo-fervet.png";
 import MenuBar from "../img/menu-bar.svg";
-import Desparasitacion from "../img/promo-web.png";
+import Desparasitacion from "../img/certificado_cuadrado.jpg";
+import Desp from "../img/2x1_c.jpg";
 import Cerrar from "../img/cross.png";
 import Facebook from "../img/facebook.png";
 import Insta from "../img/instagram.png";
+import Whatsapp from "../img/whats.png";
 
 import "../styles/navbar.css";
 
@@ -59,22 +61,32 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <a
-                  href="https://instagram.com/fervet.quirurgico?igshid=MzRlODBiNWFlZA=="
-                  target="_blank"
-                  className="contacto-header"
-                >
-                  <img src={Insta} className="" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.facebook.com/profile.php?id=100083396351978&mibextid=LQQJ4d"
-                  target="_blank"
-                  className="contacto-header"
-                >
-                  <img src={Facebook} className="" />
-                </a>
+                <div className="redes_header">
+                  <a
+                    href="https://instagram.com/fervet.quirurgico?igshid=MzRlODBiNWFlZA=="
+                    target="_blank"
+                    className="contacto-header"
+                    onClick={handleIsOpen}
+                  >
+                    <img src={Insta} className="" />
+                  </a>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100083396351978&mibextid=LQQJ4d"
+                    target="_blank"
+                    className="contacto-header"
+                    onClick={handleIsOpen}
+                  >
+                    <img src={Facebook} className="" />
+                  </a>
+                  <a
+                    href="https://api.whatsapp.com/send/?phone=573228323376"
+                    className="contacto-header"
+                    onClick={handleIsOpen}
+                    target="_blank"
+                  >
+                    <img src={Whatsapp} alt="" />
+                  </a>
+                </div>
               </li>
             </ul>
           </nav>
@@ -87,18 +99,28 @@ const Navbar = () => {
         </div>
       </header>
       {abrirModal ? (
-        <div className="modal">
-          <img src={Cerrar} alt="" id="cerrar" onClick={handleIsModal} />
+        <div className="modal" onClick={handleIsModal}>
+          <img src={Cerrar} alt="" id="cerrar" />
           <div className="container-modal">
-            <h2>¡ Aprovecha esta promoción !</h2>
-            <p>solo válida en el sitio web</p>
-            <img src={Desparasitacion} alt="" />
-            <a
-              href="https://wa.me/573228323376&text=Quiero la desparasitación gratis para mi mascota"
-              target="_blank"
-            >
-              Quiero mi promoción
-            </a>
+            <div className="modal-header">
+              <h2>¡ Aprovecha nuestras promociones !</h2>
+              <p>
+                Contáctanos vía whatsapp o llena nuestro formulario en los
+                botones de abajo
+              </p>
+            </div>
+            <div className="modal-body">
+              <img src={Desparasitacion} alt="" />
+              <img src={Desp} />
+            </div>
+            <div className="modal-footer">
+              <a href="https://wa.me/573228323376" target="_blank">
+                Whatsapp
+              </a>
+              <Link to="formulario" className="btn_form">
+                Llenar formulario
+              </Link>
+            </div>
           </div>
         </div>
       ) : (

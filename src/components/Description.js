@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import Mascota from "../img/cachorros.jpg";
 import "../styles/description.css";
 
 const Description = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <div className="description">
       <h2>Veterinaria Bogotá</h2>
       <div className="container-description">
-        <div className="item-description">
+        <div className="item-description" data-aos="fade-right">
           <p>
             Somos una entidad colombiana especializada en la salud preventiva,
             diagnóstico y tratamiento de las diferentes patologías que afectan a
@@ -21,7 +26,7 @@ const Description = () => {
             siempre la vida.
           </p>
         </div>
-        <div className="item-description">
+        <div className="item-description" data-aos="fade-left">
           <img src={Mascota} alt="" />
         </div>
       </div>
