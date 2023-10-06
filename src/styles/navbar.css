@@ -30,6 +30,58 @@ header {
   text-transform: uppercase;
   font-size: 20px;
 }
+.title-submenu {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #003366;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.menu-sub {
+  position: relative;
+  width: auto;
+}
+.submenu {
+  position: absolute;
+  top: 100%;
+  width: 210px;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #003366;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.7s;
+}
+.openSubmenu {
+  height: 100px;
+  overflow: visible;
+  opacity: 1;
+  transition: all 0.7s;
+  z-index: 4;
+}
+.submenu .links-submenu {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 7px auto;
+}
+.container-submenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.container-submenu img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+}
 .contacto-header img {
   width: 45px;
   height: 45px;
@@ -126,8 +178,27 @@ header {
   width: 40px;
   height: 40px;
 }
+.arrow1 {
+  display: block;
+}
+.arrow2 {
+  display: none;
+}
+.submenu-compu {
+  display: block;
+}
+.submenu-movil {
+  display: none;
+}
 
 @media (max-width: 767px) {
+  .submenu-compu {
+    display: none;
+  }
+  .submenu-movil {
+    display: block;
+  }
+
   .modal-body {
     display: flex;
     flex-direction: column;
@@ -193,6 +264,63 @@ header {
     padding: 7px 30px;
     border-radius: 7px;
     position: relative;
+  }
+
+  .menu-sub {
+    position: relative;
+    width: auto;
+  }
+  .submenu {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #29abe2;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.7s;
+  }
+  .openSubmenu {
+    height: 150px;
+    overflow: visible;
+    opacity: 1;
+    transition: all 0.7s;
+  }
+  .arrow1 {
+    display: none;
+  }
+  .arrow2 {
+    display: block;
+  }
+  .openSubmenu {
+    height: 100px;
+    overflow: visible;
+    opacity: 1;
+    transition: all 0.7s;
+    z-index: 4;
+  }
+  .submenu .links-submenu {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin: 2px auto;
+  }
+  .container-submenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .container-submenu img {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
   }
   .menu li a::before {
     content: "";

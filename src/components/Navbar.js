@@ -10,12 +10,28 @@ import Insta from "../img/instagram.png";
 import Whatsapp from "../img/what.png";
 import wats from "../img/whats.png";
 import formulario from "../img/exam.png";
+import arrow from "../img/arrow.png";
+import arrow2 from "../img/arrow2.png";
 
 import "../styles/navbar.css";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const handleIsOpen = () => setIsOpen(!isOpen);
+  const [isSubMenu, setIsSubMenu] = useState(false);
+
+  const handleIsOpen = () => {
+    setIsOpen(!isOpen);
+    if (setIsOpen(false)) {
+      setIsSubMenu(false);
+    } else {
+      setIsSubMenu(isSubMenu);
+    }
+  };
+
+  const handleIsSubMenu = () => {
+    setIsSubMenu(!isSubMenu);
+  };
+
   const [abrirModal, setIsModal] = useState(false);
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -27,27 +43,6 @@ const Navbar = () => {
 
   const handleIsModal = () => {
     setIsModal(false);
-  };
-  const Links = [
-    {
-      title: "Todos los servicios",
-      url: "servicios",
-    },
-    {
-      title: "Cirugía",
-      url: "cirugia",
-    },
-    {
-      title: "Vacunas",
-      url: "vacunas",
-    },
-  ];
-  const [submenu, subMenuSelected] = useState(null);
-  const toggle = (i) => {
-    if (submenu === i) {
-      return subMenuSelected(null);
-    }
-    subMenuSelected(i);
   };
 
   return (
@@ -68,21 +63,45 @@ const Navbar = () => {
                   Promociones
                 </Link>
               </li>
-              <li>
-                <div className="menu-sub">
-                  <p className="title-submenu">Servicios</p>
-                  <ul>
-                    <Link to="servicios" className="links-subemnu">
+              <li onClick={handleIsSubMenu}>
+                <div className="menu-sub ">
+                  <div
+                    className="container-submenu"
+                    onMouseMove={handleIsSubMenu}
+                  >
+                    <p className="title-submenu">Servicios</p>
+                    <img src={arrow} className="arrow1" />
+                    <img src={arrow2} className="arrow2" />
+                  </div>
+                  <ul
+                    id="submenu"
+                    className={` submenu ${isSubMenu && "openSubmenu"}`}
+                  >
+                    <Link
+                      to="servicios"
+                      className="links-submenu"
+                      onClick={handleIsOpen}
+                    >
                       Todos los servicios
                     </Link>
-                    <Link to="cirugia" className="links-subemnu">
+                    <Link
+                      to="cirugia"
+                      className="links-submenu"
+                      onClick={handleIsOpen}
+                    >
                       Cirugía
-                    </Link>
-                    <Link to="vacunacion" className="links-subemnu">
-                      Vacunas
                     </Link>
                   </ul>
                 </div>
+              </li>
+              <li>
+                <Link
+                  to="vacunacion"
+                  className="links-submenu"
+                  onClick={handleIsOpen}
+                >
+                  Vacunas
+                </Link>
               </li>
               <li>
                 <Link to="formulario" onClick={handleIsOpen}>
