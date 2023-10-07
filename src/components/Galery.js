@@ -33,7 +33,7 @@ const Galery = () => {
     setIsFotos(!isFotos);
   };
   useEffect(() => {
-    Aos.init({ duration: 800 });
+    Aos.init({ duration: 500 });
   }, []);
   return (
     <div className="galery">

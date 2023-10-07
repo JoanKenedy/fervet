@@ -65,10 +65,7 @@ const Navbar = () => {
               </li>
               <li onClick={handleIsSubMenu}>
                 <div className="menu-sub ">
-                  <div
-                    className="container-submenu"
-                    onMouseMove={handleIsSubMenu}
-                  >
+                  <div className="container-submenu">
                     <p className="title-submenu">Servicios</p>
                     <img src={arrow} className="arrow1" />
                     <img src={arrow2} className="arrow2" />
