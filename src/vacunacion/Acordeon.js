@@ -14,7 +14,7 @@ const Acordeon = () => {
         "En conclusión para evitar enfermedades graves y ademas cumplir con lo establecido debes realizar el esquema de vacunación a tu mascota.",
     },
     {
-      title: "¿Las dosis de recuerdo son obligatorias?",
+      title: "¿Las dosis de refuerzo son obligatorias?",
       texto:
         "Las mascotas necesitan de las vacunas para prevenir enfermedades causadas por virus y bacterias, en el momento en qué vacunamos a nuestras mascotas se produce una reacción inmunologica còmo respuesta a los agentes que lleva la vacuna , còmo resultado de esto nuestra mascota genera anticuerpos para poder combatir dichas enfermedades. ",
       texto2:
@@ -24,13 +24,13 @@ const Acordeon = () => {
     {
       title: "He adoptado a un perro o gato ¿debo vacunarlo?",
       texto:
-        "En el caso de pacientes adultos también van es necesario realizar la vacunación, con la diferencia de que el esquema no sé manejará còmo en cachorros. En un paciente adulto bastara con relaizar el refuerzo anual , es decir una vacuna polivalente en la cual van todos los virus del esquema incluido rabia y posterior re vacunación anual.",
+        "En el caso de pacientes adultos también es necesario realizar la vacunación, con la diferencia de que el esquema no sé manejará còmo en cachorros. En un paciente adulto bastara con relaizar el refuerzo anual , es decir una vacuna polivalente en la cual van todos los virus del esquema incluido rabia y posterior re vacunación anual.",
     },
 
     {
       title: "¿Cuáles son las reacciones más frecuentes tras la vacuna?",
       texto:
-        "Dentro de las reacciones postvacunales màs frecuentes y esperadas sé encuentran , decaimiento , inapetencia , en algunos casos fiebre transitoria , pero todos estos signos y síntomas sòlo deberán presentarse en las primeras 24 horas post vacunación. ",
+        "Dentro de las reacciones postvacunales màs frecuentes y esperadas sé encuentran : decaimiento , inapetencia , en algunos casos fiebre transitoria , pero todos estos signos y síntomas sòlo deberán presentarse en las primeras 24 horas post vacunación. ",
       texto2:
         "En algunos casos , mucho menos frecuente , el paciente puede presentar una reacción anafilactica a la vacuna ( normalmente a algunos de sus Vehículos o diluyentes ) en este caso notaras qué tu mascota presenta una inflamación muy aguda en todo su cuerpo , principalmente en la cara . Sí tu Perro presenta este tipo de reacciones despues de vacunarlo debes llevarlo de inmediato a la clínica para ser atendido lo antes posible.",
     },
